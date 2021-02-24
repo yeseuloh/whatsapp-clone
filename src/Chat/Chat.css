@@ -1,0 +1,98 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.85;
+}
+
+.chat__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    background-color: #EDEDED;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.chat__headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.chat__headerLeft img {
+    width: 40px;
+    object-fit: cover;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 15px;
+
+}
+
+.chat__headerLeft-chatInfo {
+    margin-left: 15px;
+}
+
+.chat__headerLeft-chatInfo > * {
+    display: block;
+}
+
+.chat__headerLeft-chatInfo .chatName {
+    font-size: 1.2rem;
+    color: #1C1C1C;
+}
+
+.chat__headerLeft-chatInfo .chatInfo {
+    font-size: 0.9rem;
+    color: #797979;
+}
+
+.chat__headerRight > * {
+    margin-right: 25px;
+    font-size: 1.6rem;
+}
+
+/* Chatroom */
+
+.chat__chatroom {
+    height: calc(100% - 66px);
+    background-color: #F0F0F0;
+}
+
+.chat__chatroom-messages {
+    height: calc(100% - 66px);
+    background: url("../images/whatsapp-background.png");
+    /* background from https://gist.github.com/abdurrahmanekr/2747d704edec93a06e454eba2653e0df */
+}
+
+.chat__chatroom-sendMessages {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat__chatroom-sendMessages .message_functionalityLeft {
+    margin-right: 20px;
+}
+
+.chat__chatroom-sendMessages .message_functionalityLeft > * {
+    margin-left: 20px;
+}
+
+.chat__chatroom-sendMessages .input {
+    background-color: #fff;
+    height: 50px;
+    min-width: calc(100% - 200px);
+    border-radius: 25px;
+}
+
+.chat__chatroom-sendMessages svg {
+    font-size: 1.8rem;
+    color: #4F585D;
+}
+
+.chat__chatroom-sendMessages .message_functionalityRight {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
