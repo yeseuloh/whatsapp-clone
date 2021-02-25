@@ -33,7 +33,16 @@ const Chat = () => {
         </div>
       </div>
       <div className="chat__chatroom">
-        <div className="chat__chatroom-messages"></div>
+        <div className="chat__chatroom-messages">
+          <div className="message received">
+            <span className="text">{"hello"}</span>
+            <span className="time">{"4:16pm"}</span>
+          </div>
+          <div className="message sent">
+            <span className="text">{"hey!"}</span>
+            <span className="time">{"4:16pm"}</span>
+          </div>
+        </div>
         <div className="chat__chatroom-sendMessages">
           <div className="message_functionalityLeft">
             <MoodIcon />
