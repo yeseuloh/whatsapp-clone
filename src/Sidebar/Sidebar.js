@@ -39,7 +39,18 @@ const Sidebar = () => {
           <span>Search or start new chat</span>
         </div>
       </div>
-      <div className="sidebar__chatList"></div>
+      <div className="sidebar__chatList">
+        <div className="sidebar__chatList-elem">
+          <img src={Test} alt="test" />
+          <div className="sidebar__chatList-elem--chatInfo">
+            <div className="info">
+                <span className="chatName">Chatty Chat</span>
+                <span className="date">{'2020-12-31'}</span>
+            </div>
+            <span className="message">Hopefully! </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

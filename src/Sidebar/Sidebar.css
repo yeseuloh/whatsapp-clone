@@ -88,3 +88,63 @@
     font-size: 0.95rem;
     color: #A0A0A0;
 }
+
+.sidebar__chatList {
+    max-height: calc(90vh - 66px - 56px);
+    overflow-y: auto;
+}
+
+.sidebar__chatList-elem {
+    height: 74px;
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #EBEBEB;
+    align-items: center;
+}
+
+.sidebar__chatList-elem:hover {
+    background-color: #f6f6f6;
+}
+
+.sidebar__chatList-elem img {
+    width: 50px;
+    object-fit: cover;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 15px;
+}
+
+.sidebar__chatList-elem--chatInfo {
+    margin-left: 15px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.sidebar__chatList-elem--chatInfo > * {
+    display: block;
+}
+
+.sidebar__chatList-elem--chatInfo .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar__chatList-elem--chatInfo .info .chatName {
+    font-size: 1.1rem;
+    color: #1C1C1C;
+    font-weight: 500;
+}
+
+.sidebar__chatList-elem--chatInfo .info .date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.sidebar__chatList-elem--chatInfo .message {
+    font-size: 0.9rem;
+    color: #797979;
+    margin-top: 5px;
+}

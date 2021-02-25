@@ -37,13 +37,16 @@
 }
 
 .chat__headerLeft-chatInfo .chatName {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #1C1C1C;
+    font-weight: 500;
+
 }
 
 .chat__headerLeft-chatInfo .chatInfo {
     font-size: 0.9rem;
     color: #797979;
+    margin-top: 5px;
 }
 
 .chat__headerRight {
