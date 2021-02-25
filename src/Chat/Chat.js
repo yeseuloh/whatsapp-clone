@@ -1,11 +1,14 @@
 import React from "react";
-import "./Chat.css";
+
+import { IconButton } from "@material-ui/core";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 import MoodIcon from "@material-ui/icons/Mood";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import MicNoneIcon from "@material-ui/icons/MicNone";
+
+import "./Chat.css";
 
 import Test from "../images/test.jpg";
 
@@ -21,8 +24,12 @@ const Chat = () => {
           </div>
         </div>
         <div className="chat__headerRight">
-          <SearchIcon />
-          <ExpandMoreIcon />
+          <IconButton>
+            <SearchIcon />
+          </IconButton>
+          <IconButton>
+            <ExpandMoreIcon />
+          </IconButton>
         </div>
       </div>
       <div className="chat__chatroom">
@@ -32,9 +39,7 @@ const Chat = () => {
             <MoodIcon />
             <AttachFileIcon />
           </div>
-          <div className="input">
-              
-          </div>
+          <div className="input"></div>
           <div className="message_functionalityRight">
             <MicNoneIcon />
           </div>

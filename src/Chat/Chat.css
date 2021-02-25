@@ -1,7 +1,7 @@
 .chat {
     display: flex;
     flex-direction: column;
-    flex: 0.85;
+    flex: 1;
 }
 
 .chat__header {
@@ -46,9 +46,8 @@
     color: #797979;
 }
 
-.chat__headerRight > * {
-    margin-right: 25px;
-    font-size: 1.6rem;
+.chat__headerRight {
+    margin-right: 15px;
 }
 
 /* Chatroom */

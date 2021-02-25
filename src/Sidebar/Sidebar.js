@@ -1,11 +1,15 @@
 import React from "react";
 
-import "./Sidebar.css";
+import { IconButton } from "@material-ui/core";
 
 import CreateIcon from "@material-ui/icons/BorderColor";
-import DonutLargeIcon from '@material-ui/icons/DonutLarge';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import SearchIcon from '@material-ui/icons/Search';
+import DonutLargeIcon from "@material-ui/icons/DonutLarge";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import SearchIcon from "@material-ui/icons/Search";
+
+import "./Sidebar.css";
+
+import Test from "../images/test.jpg";
 
 const Sidebar = () => {
   return (
@@ -17,20 +21,25 @@ const Sidebar = () => {
           <button className="screen" />
         </div>
         <div className="sidebar__headerRight">
-          <DonutLargeIcon />
-          <CreateIcon />
-          <ExpandMoreIcon />
+          <img src={Test} alt="test" />
+          <IconButton>
+            <DonutLargeIcon />
+          </IconButton>
+          <IconButton>
+            <CreateIcon />
+          </IconButton>
+          <IconButton>
+            <ExpandMoreIcon />
+          </IconButton>
         </div>
       </div>
       <div className="sidebar__search">
-          <div className="sidebar__searchBar">
-            <SearchIcon />
-            <span>Search or start new chat</span>
-          </div>
+        <div className="sidebar__searchBar">
+          <SearchIcon />
+          <span>Search or start new chat</span>
+        </div>
       </div>
-      <div className="sidebar__chatList">
-
-      </div>
+      <div className="sidebar__chatList"></div>
     </div>
   );
 };

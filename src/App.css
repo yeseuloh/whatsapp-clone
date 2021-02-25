@@ -13,4 +13,5 @@
   box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.75);
   border-radius: 20px;
   overflow: hidden;
+  min-width: 900px;
 }

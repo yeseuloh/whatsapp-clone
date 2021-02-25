@@ -1,7 +1,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0.35;
+    flex: 0.5;
     border-right: 1px solid #ccc;
     max-width: 350px;
 }
@@ -41,9 +41,20 @@
     border: 1px solid #2FB444;
 }
 
-.sidebar__headerRight > * {
-    margin-right: 25px;
-    font-size: 1.6rem;
+.sidebar__headerRight {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__headerRight img {
+    width: 40px;
+    object-fit: cover;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 
