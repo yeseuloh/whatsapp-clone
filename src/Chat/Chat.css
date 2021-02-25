@@ -59,7 +59,7 @@
 }
 
 .chat__chatroom-messages {
-  height: calc(100% - 66px);
+  height: calc(100% - 70px);
   padding: 0 23px;
   background: url("../images/whatsapp-background.png");
   /* background from https://gist.github.com/abdurrahmanekr/2747d704edec93a06e454eba2653e0df */
